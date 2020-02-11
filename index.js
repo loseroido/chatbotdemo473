@@ -12,12 +12,19 @@ const app = express();
 
 const linebotParser = bot.parser();
 
+const logs = [];
+
+app.get("/", function(req, res) {
+  res.send(logs.toString());
+});
+
 app.post("/callback", linebotParser);
 
 bot.on("message", function(event) {
   event
     .reply(event.message.text)
     .then(function(data) {
+      logs.push(data.toString());
       console.log("Success", data);
     })
     .catch(function(error) {
