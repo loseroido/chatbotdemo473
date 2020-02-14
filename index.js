@@ -25,7 +25,7 @@ bot.on("message", function(event) {
     .reply(event.message.text)
     .then(function(data) {
       logs.push(data.toString());
-      console.log("Success", data+ "Haha");
+      console.log("Success", data);
     })
     .catch(function(error) {
       console.log("Error", error);
