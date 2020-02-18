@@ -15,7 +15,7 @@ const client = new line.Client(config);
 
 client.linkRichMenuToUser(groupId, "<rich_menu_id>");
 
-app.post("/callback", line.middleware(config), (req, res) => {
+app.post("/callback", line.middleware(config),async (req, res) => {
   console.log("New post");
   req.body.events; // webhook event objects
   req.body.destination; // user ID of the bot (optional)
@@ -24,7 +24,7 @@ app.post("/callback", line.middleware(config), (req, res) => {
     type: "text",
     text: "Hello,"
   };
-  console.log(client.getDefaultRichMenuId())
+  console.log(await client.getDefaultRichMenuId())
 });
 
 var schedule = require("node-schedule");
