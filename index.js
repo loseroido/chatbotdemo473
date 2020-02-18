@@ -31,8 +31,8 @@ app.post('/callback', line.middleware(config), (req, res) => {
 
 var schedule = require('node-schedule');
  
-var j = schedule.scheduleJob('*/10 * * * * *', function(){
- client.pushMessage(groupId, { type: 'text', text: 'Jobandwork!'})
+var j = schedule.scheduleJob('*/30 * * * * *', function(){
+ client.pushMessage(groupId, { type: 'text', text: 'Jobandwork! (' + Math.random() + ')'})
 });
 
 
