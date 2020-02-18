@@ -1,5 +1,6 @@
 const express = require('express')
-const middleware = require('@line/bot-sdk').middleware
+const line = require('@line/bot-sdk');
+
 
 const app = express()
 
@@ -12,10 +13,10 @@ const config = {
 
 const groupId = 'C3f4fe7ff4e6e5223810445b0146f2788';
 
-const client = middleware(config)
+const client = new line.Client(config)
 
 
-app.post('/callback', middleware(config), (req, res) => {
+app.post('/callback', line.middleware(config), (req, res) => {
   console.log('New post')
   req.body.events // webhook event objects
   req.body.destination // user ID of the bot (optional)
