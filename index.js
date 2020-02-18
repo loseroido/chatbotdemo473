@@ -1,4 +1,4 @@
-const linebot = require("linebot");
+const linebot = require("@line/bot-sdk");
 const express = require("express");
 
 const bot = linebot({
