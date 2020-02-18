@@ -15,4 +15,6 @@ app.post('/callback', middleware(config), (req, res) => {
   req.body.destination // user ID of the bot (optional)
 })
 
-app.listen(process.env.PORT || 8080)
+app.listen(process.env.PORT || 5000, function() {
+  console.log("LineBot is running.");
+});
