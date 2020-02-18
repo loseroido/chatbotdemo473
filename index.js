@@ -13,6 +13,8 @@ const config = {
 app.post('/callback', middleware(config), (req, res) => {
   req.body.events // webhook event objects
   req.body.destination // user ID of the bot (optional)
+  console.log(req.body.events)
+  
 })
 
 app.listen(process.env.PORT || 5000, function() {
