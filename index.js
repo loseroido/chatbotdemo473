@@ -20,13 +20,6 @@ app.post('/callback', line.middleware(config), (req, res) => {
   req.body.events // webhook event objects
   req.body.destination // user ID of the bot (optional)
   console.log(req.body.events)
-  const message1 = {
-    type: 'text',
-    text: 'Hello,'
-  };
-  client.multicast(['R57e49f3d31b5199d05551896db350010'],
-  [message1]
-)
 })
 
 var schedule = require('node-schedule');
