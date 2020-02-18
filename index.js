@@ -34,5 +34,4 @@ bot.on("message", function(event) {
 
 app.listen(5000, function() {
   console.log("LineBot is running.");
-  console.log("LineBot is running haha.");
 });
