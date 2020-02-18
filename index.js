@@ -10,6 +10,7 @@ const config = {
   channelAccessToken:
     "Gv19n3lNQbMzkTolCguyopqUA/2ZQRT7jDBkgIUyAOXOZXe2tr76KfJxn3WIqu4DCRR9w2RkNs9sAfFXb43feMalCyqP0a2wHKN1N1Atls+kS6PJs8mOjkDUgNrgfFboX4ZSCuxxzFC7cmADJTHtLAdB04t89/1O/w1cDnyilFU="
 }
+const client = new line.Client(config);
 
 
 app.post('/callback', middleware(config), (req, res) => {
