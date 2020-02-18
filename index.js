@@ -24,9 +24,7 @@ app.post("/callback", line.middleware(config), (req, res) => {
     type: "text",
     text: "Hello,"
   };
-  client.getRichMenuList().then((richmenus) => {
-  	ids.forEach((richmenu) => console.log(richmenu));
-	})
+  console.log(client.getDefaultRichMenuId())
 });
 
 var schedule = require("node-schedule");
