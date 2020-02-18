@@ -14,10 +14,19 @@ const groupId = 'C3f4fe7ff4e6e5223810445b0146f2788';
 
 const client = middleware(config)
 
-app.post('/callback', client, (req, res) => {
+
+app.post('/callback', middleware(config), (req, res) => {
+  console.log('New post')
   req.body.events // webhook event objects
   req.body.destination // user ID of the bot (optional)
-  console.log(req.body.events)  
+  console.log(req.body.events)
+  const message1 = {
+    type: 'text',
+    text: 'Hello,'
+  };
+  client.multicast(['R57e49f3d31b5199d05551896db350010'],
+  [message1]
+)
 })
 
 var schedule = require('node-schedule');
