@@ -11,6 +11,7 @@ const config = {
 }
 
 app.post('/callback', middleware(config), (req, res) => {
+  console.log('New post')
   req.body.events // webhook event objects
   req.body.destination // user ID of the bot (optional)
   console.log(req.body.events)
