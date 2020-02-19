@@ -38,7 +38,10 @@ app.post("/callback", line.middleware(config),async (req, res) => {
 });
 function handleEvent(event){
   if (event.type !=='message'||event.message.type !=='text'){
-    return Promise.resolve(null);
+    return Promise.catch((err)=>{
+      console.error(err);
+      res.status(500).end();
+    });
   }
   return client.replyMessage(event.replyToken, carousel);
   
