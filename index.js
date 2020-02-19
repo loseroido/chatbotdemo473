@@ -18,7 +18,7 @@ const Ids = {
 };
 
 client.linkRichMenuToUser(Ids.groupId, "richmenu-b937849f3570e3556c497dd20dcf1b23");
-
+client.linkRichMenuToUser(Ids.ebaId, "richmenu-b937849f3570e3556c497dd20dcf1b23");
 app.post("/callback", line.middleware(config),async (req, res) => {
   console.log("New post");
   Promise
