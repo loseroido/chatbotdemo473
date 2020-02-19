@@ -78,7 +78,7 @@ module.exports.test = {
       height: 1040
     },
     video: {
-      originalContentUrl: 'https://example.com/video.mp4',
+      originalContentUrl: 'https://youtu.be/J24TGZDk960',
       previewImageUrl: 'https://example.com/video_preview.jpg',
       area: {
         x: 0,
@@ -87,14 +87,14 @@ module.exports.test = {
         height: 585
       },
       externalLink: {
-        linkUri: 'https://example.com/see_more.html',
+        linkUri: 'https://developers.line.biz/en/reference/messaging-api/#imagemap-action-objects',
         label: 'See More'
       }
     },
     actions: [
       {
         type: 'uri',
-        linkUri: 'https://example.com/',
+        linkUri: 'https://developers.line.biz/en/reference/messaging-api/#imagemap-action-objects',
         area: {
           x: 0,
           y: 586,
