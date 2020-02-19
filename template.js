@@ -43,11 +43,6 @@ module.exports.test = {
               type: 'message',
               label: 'Action 2',
               text: 'Action 2'
-            },
-            {
-              type: 'message',
-              label: 'Action 3',
-              text: 'Action 3'
             }
           ]
         },
@@ -65,11 +60,6 @@ module.exports.test = {
               type: 'message',
               label: 'Action 2',
               text: 'Action 2'
-            },
-            {
-              type: 'message',
-              label: 'Action 3',
-              text: 'Action 3'
             }
           ]
         },
@@ -88,11 +78,23 @@ module.exports.test = {
               type: 'message',
               label: 'Action 2',
               text: 'Action 2'
+            }
+          ]
+        },
+        {
+          thumbnailImageUrl: 'https://cdn2.vectorstock.com/i/1000x1000/66/36/nameplate-of-wood-with-word-menu-vector-3166636.jpg',
+          title: 'Menu',
+          text: 'Menu',
+          actions: [
+            {
+              type: 'message',
+              label: 'Menu',
+              text: 'Menu'
             },
             {
               type: 'message',
-              label: 'Action 3',
-              text: 'Action 3'
+              label: 'Menu',
+              text: 'Menu'
             }
           ]
         }
