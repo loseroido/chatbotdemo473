@@ -44,12 +44,13 @@ function handleEvent(event){
       res.status(500).end();
     });
   }
-  if (event.message=='Menu'){
+  if (event.message.text==='Menu'){
   return client.replyMessage(event.replyToken, imageMap);
-  };
+  } else if(event.message.text==='I love eba'){
+    return client.replyMessage(event.replyToken, carousel);
+  }
   
 }
-console.log(carousel)
 
 // const j = schedule.scheduleJob("*/30 * * * * *", function() {
 //   client.pushMessage(Ids.groupId, {
