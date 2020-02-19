@@ -1,7 +1,7 @@
 const express = require("express");
 const line = require("@line/bot-sdk");
 const schedule = require("node-schedule");
-const {test,carousel}=require("./test");
+const {test,carousel}=require("./template");
 
 const app = express();
 
