@@ -99,26 +99,4 @@ module.exports.test = {
         }
       }
     ]
-    actions: [
-      {
-        type: 'uri',
-        linkUri: 'https://developers.line.biz/en/reference/messaging-api/#imagemap-action-objects',
-        area: {
-          x: 0,
-          y: 586,
-          width: 520,
-          height: 454
-        }
-      },
-      {
-        type: 'message',
-        text: 'Hello',
-        area: {
-          x: 520,
-          y: 586,
-          width: 520,
-          height: 454
-        }
-      }
-    ]
   }
