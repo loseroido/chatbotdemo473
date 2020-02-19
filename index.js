@@ -4,7 +4,7 @@ const schedule = require("node-schedule");
 const {test,carousel, imageMap}=require("./template");
 
 const app = express();
-
+app.use(express.static('public'));
 const config = {
   channelId: "1653837691",
   channelSecret: "de9040d7cbac1069321a5c80dfefc864",
