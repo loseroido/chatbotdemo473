@@ -71,26 +71,34 @@ module.exports.test = {
   }
   module.exports.imageMap= {
     type: 'imagemap',
-    baseUrl: 'https://example.com/bot/images/rm001',
+    baseUrl: 'https://jobandwork.jp/img/logo.png',
     altText: 'This is an imagemap',
     baseSize: {
       width: 1040,
       height: 1040
     },
-    video: {
-      originalContentUrl: 'https://youtu.be/J24TGZDk960',
-      previewImageUrl: 'https://example.com/video_preview.jpg',
-      area: {
-        x: 0,
-        y: 0,
-        width: 1040,
-        height: 585
-      },
-      externalLink: {
+    actions: [
+      {
+        type: 'uri',
         linkUri: 'https://developers.line.biz/en/reference/messaging-api/#imagemap-action-objects',
-        label: 'See More'
+        area: {
+          x: 0,
+          y: 0,
+          width: 520,
+          height: 454
+        }
+      },
+      {
+        type: 'message',
+        text: 'Hello haha',
+        area: {
+          x: 520,
+          y: 0,
+          width: 520,
+          height: 454
+        }
       }
-    },
+    ]
     actions: [
       {
         type: 'uri',
