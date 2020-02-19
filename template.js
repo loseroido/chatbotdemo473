@@ -80,10 +80,20 @@ module.exports.test = {
     },
     actions: [
       {
-        type: 'uri',
-        linkUri: 'https://developers.line.biz/en/reference/messaging-api/#imagemap-action-objects',
+        type: 'message',
+        text: 'I love Eba',
         area: {
           x: 0,
+          y: 0,
+          width: 520,
+          height: 1040
+        }
+      },
+      {
+        type: 'message',
+        text: 'Job&Work',
+        area: {
+          x: 520,
           y: 0,
           width: 520,
           height: 1040
@@ -94,9 +104,9 @@ module.exports.test = {
         text: 'Hello haha',
         area: {
           x: 520,
-          y: 0,
-          width: 520,
-          height: 1040
+          y: 520,
+          width: 1040,
+          height: 520
         }
       }
     ]
