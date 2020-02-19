@@ -1,6 +1,7 @@
 const express = require("express");
 const line = require("@line/bot-sdk");
 const schedule = require("node-schedule");
+const {test,carousel}=require("./test");
 
 const app = express();
 
@@ -29,7 +30,12 @@ app.post("/callback", line.middleware(config),async (req, res) => {
   };
   // console.log(await client.getDefaultRichMenuId())
 });
-
+function handleEvent(event){
+  if (event.type !=='message'||event.message.type !=='text'){
+    return Promise.resolve(null);
+  }
+  return client.replyMessage(event.replyToken, carousel);
+}
 
 
 // const j = schedule.scheduleJob("*/30 * * * * *", function() {
