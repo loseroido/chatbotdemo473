@@ -69,7 +69,7 @@ module.exports.test = {
       ]
     }
   }
-  
+
   module.exports.imageMap= {
     type: 'imagemap',
     baseUrl: 'https://chat-bot-demo-nodejs.herokuapp.com/images/imageMap',
@@ -86,7 +86,7 @@ module.exports.test = {
           x: 0,
           y: 0,
           width: 520,
-          height: 454
+          height: 1040
         }
       },
       {
@@ -96,7 +96,7 @@ module.exports.test = {
           x: 520,
           y: 0,
           width: 520,
-          height: 454
+          height: 1040
         }
       }
     ]
