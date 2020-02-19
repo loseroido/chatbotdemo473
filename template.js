@@ -71,7 +71,7 @@ module.exports.test = {
   }
   module.exports.imageMap= {
     type: 'imagemap',
-    baseUrl: 'https://jobandwork.jp/img/logo.png',
+    baseUrl: 'https://chat-bot-demo-nodejs.herokuapp.com/images/imageMap/460',
     altText: 'This is an imagemap',
     baseSize: {
       width: 1040,
