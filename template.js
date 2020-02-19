@@ -38,6 +38,16 @@ module.exports.test = {
               label: 'Write text to him',
               text: 'Write text to him',
               data: 'Data 1'
+            },
+            {
+              type: 'message',
+              label: 'Action 2',
+              text: 'Action 2'
+            },
+            {
+              type: 'message',
+              label: 'Action 3',
+              text: 'Action 3'
             }
           ]
         },
@@ -50,6 +60,16 @@ module.exports.test = {
               type: 'message',
               label: 'Write text to him',
               text: 'Action 1'
+            },
+            {
+              type: 'message',
+              label: 'Action 2',
+              text: 'Action 2'
+            },
+            {
+              type: 'message',
+              label: 'Action 3',
+              text: 'Action 3'
             }
           ]
         },
@@ -60,9 +80,19 @@ module.exports.test = {
           actions: [
             {
               type: 'postback',
-              label: 'Postback',
+              label: 'Reach line',
               text: 'Action 1',
               data: 'Turuu'
+            },
+            {
+              type: 'message',
+              label: 'Action 2',
+              text: 'Action 2'
+            },
+            {
+              type: 'message',
+              label: 'Action 3',
+              text: 'Action 3'
             }
           ]
         }

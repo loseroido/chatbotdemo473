@@ -44,7 +44,9 @@ function handleEvent(event){
       res.status(500).end();
     });
   }
+  if (event.message=='Menu'){
   return client.replyMessage(event.replyToken, imageMap);
+  };
   
 }
 console.log(carousel)
