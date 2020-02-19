@@ -1,5 +1,6 @@
 const express = require("express");
 const line = require("@line/bot-sdk");
+const schedule = require("node-schedule");
 
 const app = express();
 
@@ -10,11 +11,12 @@ const config = {
     "Gv19n3lNQbMzkTolCguyopqUA/2ZQRT7jDBkgIUyAOXOZXe2tr76KfJxn3WIqu4DCRR9w2RkNs9sAfFXb43feMalCyqP0a2wHKN1N1Atls+kS6PJs8mOjkDUgNrgfFboX4ZSCuxxzFC7cmADJTHtLAdB04t89/1O/w1cDnyilFU="
 };
 const client = new line.Client(config);
-const groupId = "C3f4fe7ff4e6e5223810445b0146f2788";
+const Ids = {
+  groupId:"C3f4fe7ff4e6e5223810445b0146f2788",
+  ebaId:  "U382734647ff2b7f97b64132e0bab57f9"
+};
 
-
-
-client.linkRichMenuToUser(groupId, "<rich_menu_id>");
+client.linkRichMenuToUser(Ids.groupId, "<rich_menu_id>");
 
 app.post("/callback", line.middleware(config),async (req, res) => {
   console.log("New post");
@@ -28,10 +30,10 @@ app.post("/callback", line.middleware(config),async (req, res) => {
   // console.log(await client.getDefaultRichMenuId())
 });
 
-var schedule = require("node-schedule");
 
-var j = schedule.scheduleJob("*/30 * * * * *", function() {
-  client.pushMessage(groupId, {
+
+const j = schedule.scheduleJob("*/30 * * * * *", function() {
+  client.pushMessage(Ids.groupId, {
     type: "text",
     text: "Jobandwork! (" + Math.random() + ")"
   });
