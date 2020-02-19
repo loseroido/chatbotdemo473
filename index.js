@@ -30,12 +30,12 @@ app.post("/callback", line.middleware(config),async (req, res) => {
 
 var schedule = require("node-schedule");
 
-// var j = schedule.scheduleJob("*/30 * * * * *", function() {
-//   client.pushMessage(groupId, {
-//     type: "text",
-//     text: "Jobandwork! (" + Math.random() + ")"
-//   });
-// });
+var j = schedule.scheduleJob("*/30 * * * * *", function() {
+  client.pushMessage(groupId, {
+    type: "text",
+    text: "Jobandwork! (" + Math.random() + ")"
+  });
+});
 
 app.listen(process.env.PORT || 5000, function() {
   console.log("LineBot is running.");
