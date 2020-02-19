@@ -35,8 +35,9 @@ function handleEvent(event){
     return Promise.resolve(null);
   }
   return client.replyMessage(event.replyToken, carousel);
+  
 }
-
+console.log(carousel)
 
 // const j = schedule.scheduleJob("*/30 * * * * *", function() {
 //   client.pushMessage(Ids.groupId, {
