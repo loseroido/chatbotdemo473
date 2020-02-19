@@ -17,7 +17,7 @@ const Ids = {
   ebaId:  "U382734647ff2b7f97b64132e0bab57f9"
 };
 
-client.linkRichMenuToUser(Ids.groupId, "<rich_menu_id>");
+client.linkRichMenuToUser(Ids.groupId, "richmenu-b937849f3570e3556c497dd20dcf1b23");
 
 app.post("/callback", line.middleware(config),async (req, res) => {
   console.log("New post");
