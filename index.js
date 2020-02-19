@@ -21,6 +21,13 @@ client.linkRichMenuToUser(Ids.groupId, "<rich_menu_id>");
 
 app.post("/callback", line.middleware(config),async (req, res) => {
   console.log("New post");
+  Promise
+    .all(req.body.events.map(handleEvent))
+    .then((result) => res.json(result))
+    .catch((err)=>{
+      console.error(err);
+      res.status(500).end();
+    });
   req.body.events; // webhook event objects
   req.body.destination; // user ID of the bot (optional)
   console.log(req.body.events);
@@ -29,6 +36,7 @@ app.post("/callback", line.middleware(config),async (req, res) => {
     text: "Hello,"
   };
   // console.log(await client.getDefaultRichMenuId())
+
 });
 function handleEvent(event){
   if (event.type !=='message'||event.message.type !=='text'){
