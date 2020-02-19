@@ -46,7 +46,7 @@ function handleEvent(event){
   }
   if (event.message.text==='Menu'){
   return client.replyMessage(event.replyToken, imageMap);
-  } else if(event.message.text==='I love eba'){
+  } else if(event.message.text==='I love Eba'){
     return client.replyMessage(event.replyToken, carousel);
   }
   
