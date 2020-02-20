@@ -23,4 +23,4 @@ const workers = [{
     image: "https://chat-bot-demo-nodejs.herokuapp.com/images/workers/Dorj.jpeg"
 }]
 
-module.exports.workerss = workers
+module.exports.workers = workers
