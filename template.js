@@ -23,7 +23,71 @@ const carouselWorkers = listOfWorkers.map(worker => {
     ]
   }
   })
+const flexWorkers =listOfWorkers.map(worker => {
+  return {
+      type: 'box',
+      layout: 'horizontal',
+      margin: 'md',
+      contents: [
+        {
+          type: 'box',
+          layout: 'baseline',
+          contents: [
+            {
+              type: 'icon',
+              url: 'https://sitthi.me:3807/static/flag/SaudiArabia.png',
+              size: 'sm'
+            },
+            {
+              type: 'text',
+              text: 'Saudi Arabia',
+              size: 'sm',
+              color: '#555555'
+            }
+          ],
+          flex: 3
+        },
+        {
+          type: 'text',
+          text: '1',
+          size: 'sm',
+          color: '#111111',
+          align: 'end'
+        },
+        {
+          type: 'text',
+          text: '0',
+          size: 'sm',
+          color: '#00ff00',
+          align: 'end'
+        },
+        {
+          type: 'text',
+          text: '0',
+          size: 'sm',
+          color: '#aaaaaa',
+          align: 'end'
+        },
+        {
+          type: 'text',
+          text: '1',
+          size: 'sm',
+          color: '#ff0000',
+          align: 'end'
+        },
+        {
+          type: 'text',
+          text: '0',
+          size: 'sm',
+          color: '#111111',
+          align: 'end'
+        }
+      ]
+    }
 
+  }
+
+)
 
 
 module.exports.carousel = {
@@ -261,310 +325,7 @@ module.exports.fifas={
           layout: 'vertical',
           contents: [
             {
-              type: 'box',
-              layout: 'vertical',
-              margin: 'md',
-              spacing: 'sm',
-              contents: [
-                {
-                  type: 'box',
-                  layout: 'horizontal',
-                  contents: [
-                    {
-                      type: 'text',
-                      text: 'List',
-                      size: 'sm',
-                      color: '#555555',
-                      weight: 'bold',
-                      flex: 3
-                    },
-                    {
-                      type: 'text',
-                      text: 'P',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end',
-                      weight: 'bold'
-                    },
-                    {
-                      type: 'text',
-                      text: 'W',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end',
-                      weight: 'bold'
-                    },
-                    {
-                      type: 'text',
-                      text: 'D',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end',
-                      weight: 'bold'
-                    },
-                    {
-                      type: 'text',
-                      text: 'L',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end',
-                      weight: 'bold'
-                    },
-                    {
-                      type: 'text',
-                      text: 'Pt',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end',
-                      weight: 'bold'
-                    }
-                  ]
-                },
-                {
-                  type: 'separator',
-                  margin: 'md'
-                },
-                {
-                  type: 'box',
-                  layout: 'horizontal',
-                  margin: 'md',
-                  contents: [
-                    {
-                      type: 'box',
-                      layout: 'baseline',
-                      contents: [
-                        {
-                          type: 'icon',
-                          url: 'https://chat-bot-demo-nodejs.herokuapp.com/images/workers/Bat.jpeg',
-                          size: 'sm'
-                        },
-                        {
-                          type: 'text',
-                          text: 'Russia',
-                          size: 'sm',
-                          color: '#555555'
-                        }
-                      ],
-                      flex: 3
-                    },
-                    {
-                      type: 'text',
-                      text: '2',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '2',
-                      size: 'sm',
-                      color: '#00ff00',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#aaaaaa',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#ff0000',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '6',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    }
-                  ]
-                },
-                {
-                  type: 'box',
-                  layout: 'horizontal',
-                  margin: 'md',
-                  contents: [
-                    {
-                      type: 'box',
-                      layout: 'baseline',
-                      contents: [
-                        {
-                          type: 'icon',
-                          url: 'https://sitthi.me:3807/static/flag/Uruguay.png',
-                          size: 'sm'
-                        },
-                        {
-                          type: 'text',
-                          text: 'Uruguay',
-                          size: 'sm',
-                          color: '#555555'
-                        }
-                      ],
-                      flex: 3
-                    },
-                    {
-                      type: 'text',
-                      text: '1',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '1',
-                      size: 'sm',
-                      color: '#00ff00',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#aaaaaa',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#ff0000',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '3',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    }
-                  ]
-                },
-                {
-                  type: 'box',
-                  layout: 'horizontal',
-                  margin: 'md',
-                  contents: [
-                    {
-                      type: 'box',
-                      layout: 'baseline',
-                      contents: [
-                        {
-                          type: 'icon',
-                          url: 'https://sitthi.me:3807/static/flag/Egypt.png',
-                          size: 'sm'
-                        },
-                        {
-                          type: 'text',
-                          text: 'Egypt',
-                          size: 'sm',
-                          color: '#555555'
-                        }
-                      ],
-                      flex: 3
-                    },
-                    {
-                      type: 'text',
-                      text: '2',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#00ff00',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#aaaaaa',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '2',
-                      size: 'sm',
-                      color: '#ff0000',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    }
-                  ]
-                },
-                {
-                  type: 'box',
-                  layout: 'horizontal',
-                  margin: 'md',
-                  contents: [
-                    {
-                      type: 'box',
-                      layout: 'baseline',
-                      contents: [
-                        {
-                          type: 'icon',
-                          url: 'https://sitthi.me:3807/static/flag/SaudiArabia.png',
-                          size: 'sm'
-                        },
-                        {
-                          type: 'text',
-                          text: 'Saudi Arabia',
-                          size: 'sm',
-                          color: '#555555'
-                        }
-                      ],
-                      flex: 3
-                    },
-                    {
-                      type: 'text',
-                      text: '1',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#00ff00',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#aaaaaa',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '1',
-                      size: 'sm',
-                      color: '#ff0000',
-                      align: 'end'
-                    },
-                    {
-                      type: 'text',
-                      text: '0',
-                      size: 'sm',
-                      color: '#111111',
-                      align: 'end'
-                    }
-                  ]
-                }
-              ]
+              ...flexWorkers
             }
           ]
         },
