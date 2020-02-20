@@ -325,7 +325,7 @@ module.exports.fifas={
           layout: 'vertical',
           contents: [
             {
-              ...flexWorkers
+              ...flexWorkers,
             }
           ]
         },
