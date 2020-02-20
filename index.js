@@ -1,7 +1,7 @@
 const express = require("express");
 const line = require("@line/bot-sdk");
 const schedule = require("node-schedule");
-const {fifa, carousel, imageMap}=require("./template");
+const {fifa,fifas, carousel, imageMap}=require("./template");
 
 const app = express();
 app.use(express.static('public'));
