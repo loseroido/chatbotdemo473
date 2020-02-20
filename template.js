@@ -193,7 +193,15 @@ module.exports.fifas={
           layout: 'vertical',
           contents: [
             {
-              {
+              
+              type: 'button',
+              style: 'primary',
+              action: {
+                type: 'postback',
+                label: 'MENU',
+                displayText: 'MENU',
+                data: 'Menu'
+              },
               type: 'button',
               style: 'primary',
               action: {
@@ -202,19 +210,10 @@ module.exports.fifas={
                 displayText: 'MENU',
                 data: 'Menu'
               }
-            },
-            {
-              type: 'button',
-              style: 'primary',
-              action: {
-                type: 'postback',
-                label: 'MENU',
-                displayText: 'MENU',
-                data: 'Menu'
-              }
-            }
-
             }
           ]
         }
-      }]}};
+      }
+    ]
+  }
+};
