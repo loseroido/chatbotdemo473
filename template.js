@@ -75,7 +75,7 @@ module.exports.imageMap= {
     },
     {
       type: 'message',
-      text: 'Job&Work',
+      text: 'Flex',
       area: {
         x: 520,
         y: 0,
