@@ -1,7 +1,7 @@
 const express = require("express");
 const line = require("@line/bot-sdk");
 const schedule = require("node-schedule");
-const {fifa, flex, carousel, imageMap}=require("./template");
+const {fifa, carousel, imageMap}=require("./template");
 
 const app = express();
 app.use(express.static('public'));
@@ -50,7 +50,7 @@ function handleEvent(event){
   } else if(event.message.text==='Workers'){
     return client.replyMessage(event.replyToken, carousel);
   } else if(event.message.text==='Flex'){
-    return client.replyMessage(event.replyToken, flex);
+    return client.replyMessage(event.replyToken, fifa);
   } else if(event.message.text==='Hello haha'){
     return client.replyMessage(event.replyToken, fifa);
   };
