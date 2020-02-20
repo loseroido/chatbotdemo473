@@ -7,7 +7,7 @@ module.exports.carousel = {
     actions: [],
     columns: [
       {
-        thumbnailImageUrl: workers[0].name,
+        thumbnailImageUrl: workers[0].image,
         title: workers[0].name,
         text: workers[0].phone_number,
         actions: [
