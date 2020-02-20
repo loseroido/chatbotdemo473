@@ -249,7 +249,7 @@ module.exports.fifas={
           contents: [
             {
               type: 'text',
-              text: ' Workers',
+              text: ' Today\'s workers,
               weight: 'bold',
               size: 'xl',
               margin: 'md'
@@ -272,7 +272,7 @@ module.exports.fifas={
                   contents: [
                     {
                       type: 'text',
-                      text: 'Workers\' list',
+                      text: 'List',
                       size: 'sm',
                       color: '#555555',
                       weight: 'bold',
@@ -575,10 +575,8 @@ module.exports.fifas={
             {
               type: 'button',
               action: {
-                type: 'postback',
-                label: 'Schedule',
-                data: 'SCHEDULE',
-                displayText: 'Schedule'
+                type: 'message',
+                text: 'Menu'
               },
               style: 'primary'
             },
