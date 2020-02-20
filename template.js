@@ -65,7 +65,7 @@ module.exports.imageMap= {
   actions: [
     {
       type: 'message',
-      text: 'I love Eba',
+      text: 'Workers',
       area: {
         x: 0,
         y: 0,
