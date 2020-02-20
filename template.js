@@ -95,3 +95,21 @@ module.exports.imageMap= {
     }
   ]
 }
+
+module.exports.flex= {
+  type: "bubble", 
+  body: { 
+    type: "box", 
+    layout: "horizontal",　
+    contents: [ 
+      {
+        type: "text", 
+        text: "Hello,"
+      },
+      {
+        type: "text", 
+        text: "World!"
+      }
+    ]
+  }
+}

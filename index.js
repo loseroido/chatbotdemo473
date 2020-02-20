@@ -49,7 +49,8 @@ function handleEvent(event){
   return client.replyMessage(event.replyToken, imageMap);
   } else if(event.message.text==='Workers'){
     return client.replyMessage(event.replyToken, carousel);
-  }
+  } else if(event.message.text==='Job&Work'){
+    return client.replyMessage(event.replyToken, flex);
   
 }
 
