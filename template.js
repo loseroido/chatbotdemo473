@@ -170,7 +170,7 @@ module.exports.fifas={
               style: 'primary',
               action: {
                 type: 'postback',
-                label: 'MENU',
+                label: 'Menu',
                 displayText: 'MENU',
                 data: 'Menu'
               },
@@ -178,7 +178,7 @@ module.exports.fifas={
               style: 'primary',
               action: {
                 type: 'postback',
-                label: 'MENU',
+                label: 'Menu',
                 displayText: 'MENU',
                 data: 'Menu'
               }
