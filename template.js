@@ -35,13 +35,13 @@ const flexWorkers =listOfWorkers.map(worker => {
           contents: [
             {
               type: 'icon',
-              url: 'https://chat-bot-demo-nodejs.herokuapp.com/images/others/logo.png',
-              size: 'sm'
+              url: worker.image,
+              size: 'xxl'
             },
             {
               type: 'text',
-              text: 'Saudi Arabia',
-              size: 'sm',
+              text: worker.name,
+              size: 'xxl',
               color: '#555555'
             }
           ],
