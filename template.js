@@ -27,8 +27,8 @@ module.exports.carousel = {
         },
         {
           thumbnailImageUrl: 'https://cdn2.vectorstock.com/i/1000x1000/66/36/nameplate-of-wood-with-word-menu-vector-3166636.jpg',
-          title: '',
-          text: '',
+          title: 'k',
+          text: 'ls',
           actions: [
             {
               type: 'message',
