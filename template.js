@@ -323,11 +323,10 @@ module.exports.fifas={
         body: {
           type: 'box',
           layout: 'vertical',
-          contents: [
-            {
-              ...flexWorkers,
-            }
-          ]
+          contents: 
+            
+             flexWorkers
+            
         },
         footer: {
           type: 'box',
