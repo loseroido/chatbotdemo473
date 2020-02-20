@@ -41,7 +41,7 @@ const flexWorkers =listOfWorkers.map(worker => {
             {
               type: 'text',
               text: worker.name,
-              size: 'xxl',
+              size: 'xl',
               color: '#555555'
             }
           ],
@@ -50,7 +50,7 @@ const flexWorkers =listOfWorkers.map(worker => {
         {
           type: 'text',
           text: '1',
-          size: 'sm',
+          size: 'xl',
           color: '#111111',
           align: 'end'
         }
