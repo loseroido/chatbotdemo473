@@ -575,8 +575,10 @@ module.exports.fifas={
             {
               type: 'button',
               action: {
-                type: 'message',
-                text: 'Menu'
+                type: 'postback',
+                label: 'Schedule',
+                data: 'SCHEDULE',
+                displayText: 'Schedule'
               },
               style: 'primary'
             },
