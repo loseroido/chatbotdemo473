@@ -51,7 +51,7 @@ function handleEvent(event){
     return client.replyMessage(event.replyToken, carousel);
   } else if(event.message.text==='Flex'){
     return client.replyMessage(event.replyToken, fifa);
-  } else if(event.message.text==='Hello haha'){
+  } else if(event.message.text==='Hello'){
     return client.replyMessage(event.replyToken, fifas);
   };
 }
