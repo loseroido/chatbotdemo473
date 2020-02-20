@@ -171,16 +171,16 @@ module.exports.fifas={
               style: 'primary',
               action: {
                 type: 'postback',
-                label: 'Menu',
-                displayText: 'MENU',
+                label: 'MENU',
+                displayText: 'Menu',
                 data: 'Menu'
               },
               type: 'button',
               style: 'primary',
               action: {
                 type: 'postback',
-                label: 'Menu',
-                displayText: 'MENU',
+                label: 'MENU',
+                displayText: 'Menu',
                 data: 'Menu'
               }
             }
