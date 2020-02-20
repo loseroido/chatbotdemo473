@@ -8,7 +8,7 @@ const carouselWorkers = listOfWorkers.map(worker => {
   return  {
     thumbnailImageUrl: worker.image,
     title: worker.name,
-    text: worker.phone_number,
+    text: worker.state,
     actions: [
       {
         type: 'message',
