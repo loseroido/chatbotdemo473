@@ -52,7 +52,7 @@ function handleEvent(event){
   } else if(event.message.text==='Flex'){
     return client.replyMessage(event.replyToken, fifa);
   } else if(event.message.text==='Hello haha'){
-    return client.replyMessage(event.replyToken, fifa);
+    return client.replyMessage(event.replyToken, fifas);
   };
 }
 // const j = schedule.scheduleJob("*/30 * * * * *", function() {
