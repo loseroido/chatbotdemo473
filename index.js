@@ -47,7 +47,7 @@ function handleEvent(event){
   }
   if (event.message.text==='Menu'){
   return client.replyMessage(event.replyToken, imageMap);
-  } else if(event.message.text==='workers'){
+  } else if(event.message.text==='Workers'){
     return client.replyMessage(event.replyToken, carousel);
   }
   
