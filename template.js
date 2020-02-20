@@ -583,14 +583,13 @@ module.exports.fifas={
             },
             {
               type: 'button',
-              margin: 'sm',
               action: {
-                type: 'uri',
-                label: 'View Source',
-                uri: 'https://sitthi.me:3807/downloaded/dd470058eafc4d0991ef21870505113c.json'
+                type: 'message',
+                label: 'Hello',
+                text: 'Hello'
               },
-              style: 'secondary'
-            }
+              style: 'Secondary'
+            },
           ]
         }
       }]}};
