@@ -346,7 +346,7 @@ module.exports.fifas={
             {
               type: 'button',
               action: {
-                type: 'Workers',
+                type: 'postback',
                 label: 'Workers',
                 data: 'Workers',
                 displayText: 'WORKERS'
