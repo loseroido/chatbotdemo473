@@ -8,7 +8,7 @@ module.exports.carousel = {
     columns: [
       {
         thumbnailImageUrl: 'https://images.unsplash.com/photo-1528953030358-b0c7de371f1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-        title: workers[1].name,
+        title: workers[0].name,
         text: 'Student, No Japanese',
         actions: [
           {
