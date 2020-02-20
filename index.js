@@ -47,11 +47,11 @@ function handleEvent(event){
   }
   if (event.message.text==='Menu'){
   return client.replyMessage(event.replyToken, imageMap);
-  } else if(event.message.text==='Workers'){
+  } else if(event.message.text==='Workers1'){
     return client.replyMessage(event.replyToken, carousel);
   } else if(event.message.text==='Flex'){
     return client.replyMessage(event.replyToken, fifa);
-  } else if(event.message.text==='Workers'){
+  } else if(event.message.text==='WORKERS'){
     return client.replyMessage(event.replyToken, fifas);
   };
 }
