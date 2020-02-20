@@ -335,7 +335,7 @@ module.exports.fifas={
                       contents: [
                         {
                           type: 'icon',
-                          url: 'https://sitthi.me:3807/static/flag/Russia.png',
+                          url: 'https://chat-bot-demo-nodejs.herokuapp.com/images/workers/Bat.jpeg',
                           size: 'sm'
                         },
                         {
