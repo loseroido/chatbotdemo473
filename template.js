@@ -249,7 +249,7 @@ module.exports.fifas={
           contents: [
             {
               type: 'text',
-              text: ' Today\'s workers,
+              text: ' Today\'s workers',
               weight: 'bold',
               size: 'xl',
               margin: 'md'
