@@ -1,4 +1,31 @@
-const {workers}=require("./workers");
+const {workers, statusOfWorkers}=require("./workers");
+
+const listOfWorkers = workers.filter(worker => {
+  return worker.status === 1
+})
+
+const carouselWorkers = listOfWorkers.map(worker => {
+  return  {
+    thumbnailImageUrl: worker.image,
+    title: worker.name,
+    text: worker.phone_number,
+    actions: [
+      {
+        type: 'message',
+        label: 'Coll',
+        text: workers.phone_number
+      },
+      {
+        type: 'message',
+        label: 'Action 2',
+        text: 'Action 2'
+      }
+    ]
+  }
+  })
+
+
+
 module.exports.carousel = {
   type: 'template',
   altText: 'this is a carousel template',
@@ -6,23 +33,7 @@ module.exports.carousel = {
     type: 'carousel',
     actions: [],
     columns: [
-      {
-        thumbnailImageUrl: workers[0].image,
-        title: workers[0].name,
-        text: workers[0].phone_number,
-        actions: [
-          {
-            type: 'message',
-            label: 'Contact',
-            text: workers[0].phone_number
-          },
-          {
-            type: 'message',
-            label: 'Action 2',
-            text: 'Action 2'
-          }
-        ]
-      },
+      ...carouselWorkers,
       {
         thumbnailImageUrl: 'https://cdn2.vectorstock.com/i/1000x1000/66/36/nameplate-of-wood-with-word-menu-vector-3166636.jpg',
         title: 'Menu',
