@@ -176,12 +176,12 @@ module.exports.fifas={
                 data: 'Menu'
               },
               type: 'button',
-              style: 'primary',
+              style: 'secondary',
               action: {
                 type: 'postback',
-                label: 'MENU',
-                displayText: 'Menu',
-                data: 'Menu'
+                label: 'WORKERS',
+                displayText: 'Workers',
+                data: 'Workers'
               }
             }
           ]

@@ -49,7 +49,7 @@ function handleEvent(event){
   return client.replyMessage(event.replyToken, imageMap);
   } else if(event.message.text==='Workers1'){
     return client.replyMessage(event.replyToken, carousel);
-  } else if(event.message.text==='WORKERS'){
+  } else if(event.message.text==='Workers'){
     return client.replyMessage(event.replyToken, fifas);
   };
 }
