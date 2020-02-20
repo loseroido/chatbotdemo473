@@ -35,7 +35,7 @@ const flexWorkers =listOfWorkers.map(worker => {
           contents: [
             {
               type: 'icon',
-              url: 'https://sitthi.me:3807/static/flag/SaudiArabia.png',
+              url: 'https://chat-bot-demo-nodejs.herokuapp.com/images/others/logo.png',
               size: 'sm'
             },
             {
@@ -99,7 +99,7 @@ module.exports.carousel = {
     columns: [
       ...carouselWorkers,
       {
-        thumbnailImageUrl: 'https://cdn2.vectorstock.com/i/1000x1000/66/36/nameplate-of-wood-with-word-menu-vector-3166636.jpg',
+        thumbnailImageUrl: 'https://chat-bot-demo-nodejs.herokuapp.com/images/others/logo.png',
         title: 'Menu',
         text: 'Menu',
         actions: [
@@ -178,7 +178,7 @@ module.exports.fifa= {
     },
     hero: {
       type: 'image',
-      url: 'https://sitthi.me:3807/static/fifa.jpg',
+      url: 'https://chat-bot-demo-nodejs.herokuapp.com/images/others/logo.png',
       size: 'full',
       aspectRatio: '20:13',
       aspectMode: 'cover'
