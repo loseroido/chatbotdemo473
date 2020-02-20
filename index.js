@@ -51,8 +51,8 @@ function handleEvent(event){
     return client.replyMessage(event.replyToken, carousel);
   } else if(event.message.text==='Job&Work'){
     return client.replyMessage(event.replyToken, flex);
-  
-}
+  } else if(event.message.text==='Hello haha'){
+    return client.replyMessage(event.replyToken, fifa);
 
 // const j = schedule.scheduleJob("*/30 * * * * *", function() {
 //   client.pushMessage(Ids.groupId, {
