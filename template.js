@@ -7,15 +7,14 @@ module.exports.carousel = {
     actions: [],
     columns: [
       {
-        thumbnailImageUrl: 'https://images.unsplash.com/photo-1528953030358-b0c7de371f1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+        thumbnailImageUrl: workers[0].name,
         title: workers[0].name,
-        text: 'Student, No Japanese',
+        text: workers[0].phone_number,
         actions: [
           {
-            type: 'postback',
-            label: 'Write text to him',
-            text: 'Write text to him',
-            data: 'Data 1'
+            type: 'message',
+            label: 'Action 2',
+            text: 'Action 2'
           },
           {
             type: 'message',
