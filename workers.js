@@ -1,7 +1,7 @@
 const statusOfWorkers = {
     1: { 1: "Will come on time",
         2: "Will be late"
-}
+},
     0: "Won't work"
 }
 
