@@ -1,7 +1,7 @@
 const express = require("express");
 const line = require("@line/bot-sdk");
 const schedule = require("node-schedule");
-const {test,carousel, imageMap}=require("./template");
+const {carousel, imageMap}=require("./template");
 
 const app = express();
 app.use(express.static('public'));
