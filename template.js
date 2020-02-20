@@ -576,19 +576,19 @@ module.exports.fifas={
               type: 'button',
               action: {
                 type: 'postback',
-                label: 'Schedule',
-                data: 'SCHEDULE',
-                displayText: 'Schedule'
+                label: 'Menu',
+                data: 'Menu',
+                displayText: 'MENU'
               },
               style: 'primary'
             },
             {
               type: 'button',
-              margin: 'sm',
               action: {
-                type: 'uri',
-                label: 'View Source',
-                uri: 'https://sitthi.me:3807/downloaded/dd470058eafc4d0991ef21870505113c.json'
+                type: 'Workers',
+                label: 'Workers',
+                data: 'Workers',
+                displayText: 'WORKERS'
               },
               style: 'secondary'
             }
