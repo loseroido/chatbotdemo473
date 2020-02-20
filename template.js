@@ -1,3 +1,4 @@
+const {workers}=require("./workers");
 module.exports.carousel = {
     type: 'template',
     altText: 'this is a carousel template',
