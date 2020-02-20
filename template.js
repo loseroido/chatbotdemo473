@@ -12,7 +12,7 @@ const carouselWorkers = listOfWorkers.map(worker => {
     actions: [
       {
         type: 'message',
-        label: 'Coll',
+        label: 'Call',
         text: worker.phone_number
       },
       {

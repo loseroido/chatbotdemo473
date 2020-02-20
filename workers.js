@@ -27,7 +27,7 @@ module.exports.workers = [{
 {
     name: "Dorj",
     age: 26,
-    status: 0,
+    status: 1,
     phone_number: "0120-3400-0544",
     image: "https://chat-bot-demo-nodejs.herokuapp.com/images/workers/Dorj.jpeg"
 }]
