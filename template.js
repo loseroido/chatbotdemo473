@@ -134,6 +134,7 @@ module.exports.imageMap= {
 module.exports.fifas={
   type: "flex",
   altText: "This is a Flex Message",
+  size: "giga",
   contents: {
     type: 'carousel',
     contents: [
