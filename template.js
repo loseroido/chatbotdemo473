@@ -575,21 +575,23 @@ module.exports.fifas={
             {
               type: 'button',
               action: {
-                type: 'message',
-                label: 'Menu',
-                text: 'Menu'
+                type: 'postback',
+                label: 'Schedule',
+                data: 'SCHEDULE',
+                displayText: 'Schedule'
               },
               style: 'primary'
             },
             {
               type: 'button',
+              margin: 'sm',
               action: {
-                type: 'message',
-                label: 'Hello',
-                text: 'Hello'
+                type: 'uri',
+                label: 'View Source',
+                uri: 'https://sitthi.me:3807/downloaded/dd470058eafc4d0991ef21870505113c.json'
               },
-              style: 'Secondary'
-            },
+              style: 'secondary'
+            }
           ]
         }
       }]}};
