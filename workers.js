@@ -1,4 +1,5 @@
-module.exports.workers  = {
+
+module.exports.workers = [{
     name: "Enkhbaatar",
     age: 20,
     phone_number: "080-8122-0794",
@@ -21,5 +22,5 @@ module.exports.workers  = {
     age: 26,
     phone_number: "0120-3400-0544",
     image: "https://chat-bot-demo-nodejs.herokuapp.com/images/workers/Dorj.jpeg"
-}
+}]
 
