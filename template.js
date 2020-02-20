@@ -13,7 +13,7 @@ const carouselWorkers = listOfWorkers.map(worker => {
       {
         type: 'message',
         label: 'Coll',
-        text: workers.phone_number
+        text: worker.phone_number
       },
       {
         type: 'message',
