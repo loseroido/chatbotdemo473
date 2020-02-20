@@ -335,23 +335,13 @@ module.exports.fifas={
           contents: [
             {
               type: 'button',
+              style: 'primary',
               action: {
                 type: 'postback',
-                label: 'Menu',
-                data: 'Menu',
-                displayText: 'MENU'
-              },
-              style: 'primary'
-            },
-            {
-              type: 'button',
-              action: {
-                type: 'postback',
-                label: 'Workers',
-                data: 'Workers',
-                displayText: 'WORKERS'
-              },
-              style: 'secondary'
+                label: 'Schedule',
+                displayText: 'Schedule',
+                data: 'SCHEDULE'
+              }
             }
           ]
         }
