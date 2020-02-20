@@ -1,4 +1,4 @@
-module.exports.workers = {
+module.exports.workers  = {
     name: "Enkhbaatar",
     age: 20,
     phone_number: "080-8122-0794",
