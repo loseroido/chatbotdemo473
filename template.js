@@ -8,8 +8,10 @@ module.exports.carousel = {
       columns: [
         {
           thumbnailImageUrl: 'https://pluspng.com/img-png/png-worker-builder-png-image-392.png',
-          title: workers[1].name,
-          text: workers[1].phone_number,
+          // title: workers[1].name,
+          // text: workers[1].phone_number,
+          title: 'Eba',
+          text: 'cdbj',
           actions: [
             {
               type: 'message',
