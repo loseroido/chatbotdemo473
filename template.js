@@ -13,8 +13,8 @@ module.exports.carousel = {
         actions: [
           {
             type: 'message',
-            label: 'Action 2',
-            text: 'Action 2'
+            label: 'Contact',
+            text: workers[0].phone_number
           },
           {
             type: 'message',
