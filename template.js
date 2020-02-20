@@ -249,7 +249,7 @@ module.exports.fifas={
           contents: [
             {
               type: 'text',
-              text: ' Group A',
+              text: ' Workers',
               weight: 'bold',
               size: 'xl',
               margin: 'md'
@@ -272,7 +272,7 @@ module.exports.fifas={
                   contents: [
                     {
                       type: 'text',
-                      text: 'Team',
+                      text: 'Workers\' list',
                       size: 'sm',
                       color: '#555555',
                       weight: 'bold',
