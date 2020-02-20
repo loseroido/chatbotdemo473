@@ -53,34 +53,6 @@ const flexWorkers =listOfWorkers.map(worker => {
           size: 'sm',
           color: '#111111',
           align: 'end'
-        },
-        {
-          type: 'text',
-          text: '0',
-          size: 'sm',
-          color: '#00ff00',
-          align: 'end'
-        },
-        {
-          type: 'text',
-          text: '0',
-          size: 'sm',
-          color: '#aaaaaa',
-          align: 'end'
-        },
-        {
-          type: 'text',
-          text: '1',
-          size: 'sm',
-          color: '#ff0000',
-          align: 'end'
-        },
-        {
-          type: 'text',
-          text: '0',
-          size: 'sm',
-          color: '#111111',
-          align: 'end'
         }
       ]
     }
@@ -129,7 +101,7 @@ module.exports.imageMap= {
   actions: [
     {
       type: 'message',
-      text: 'Workers',
+      text: 'WORKERS',
       area: {
         x: 0,
         y: 0,
