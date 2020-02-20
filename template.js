@@ -199,7 +199,7 @@ module.exports.fifas={
                 type: 'postback',
                 label: 'MENU',
                 displayText: 'MENU',
-                data: 'MENU'
+                data: 'Menu'
               }
             }
           ]
