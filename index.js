@@ -1,7 +1,7 @@
 const express = require("express");
 const line = require("@line/bot-sdk");
 const schedule = require("node-schedule");
-const {carousel, imageMap}=require("./template");
+const {carousel, imageMap, jobList}=require("./template");
 
 const app = express();
 app.use(express.static('public'));
@@ -49,7 +49,8 @@ function handleEvent(event){
   return client.replyMessage(event.replyToken, imageMap);
   } else if(event.message.text==='I love Eba'){
     return client.replyMessage(event.replyToken, carousel);
-  }
+  }else if(event.message.text==='jobList'){
+    return client.replyMessage(event.replyToken, jobList);
   
 }
 

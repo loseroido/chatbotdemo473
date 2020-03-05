@@ -84,3 +84,225 @@ module.exports.imageMap= {
     }
   ]
 }
+module.exports.jobList= {
+  type: 'flex',
+  altText: 'Flex Message',
+  contents: {
+    type: 'bubble',
+    header: {
+      type: 'box',
+      layout: 'horizontal',
+      contents: [
+        {
+          type: 'text',
+          text: 'ジョブリスト',
+          margin: 'none',
+          size: 'lg',
+          align: 'center',
+          weight: 'bold',
+          color: '#AAAAAA',
+          wrap: true
+        }
+      ]
+    },
+    body: {
+      type: 'box',
+      layout: 'horizontal',
+      spacing: 'md',
+      contents: [
+        {
+          type: 'box',
+          layout: 'vertical',
+          flex: 2,
+          contents: [
+            {
+              type: 'box',
+              layout: 'horizontal',
+              spacing: 'sm',
+              margin: 'lg',
+              action: {
+                type: 'message',
+                label: 'Job1',
+                text: 'Job1'
+              },
+              contents: [
+                {
+                  type: 'image',
+                  url: 'https://i.imgur.com/tT26mmZ.png',
+                  align: 'start',
+                  gravity: 'top',
+                  size: 'xxs'
+                },
+                {
+                  type: 'box',
+                  layout: 'vertical',
+                  flex: 4,
+                  contents: [
+                    {
+                      type: 'text',
+                      text: '3月1日 (月) 07:00 - 08:00'
+                    },
+                    {
+                      type: 'text',
+                      text: '募:3 / 閲:40 / 応:10 / 採:3 / 確:2',
+                      size: 'xs'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'separator',
+              margin: 'lg',
+              color: '#AAAAAA'
+            },
+            {
+              type: 'box',
+              layout: 'horizontal',
+              spacing: 'sm',
+              margin: 'lg',
+              action: {
+                type: 'message',
+                label: 'Job2',
+                text: 'Job2'
+              },
+              contents: [
+                {
+                  type: 'image',
+                  url: 'https://i.imgur.com/tT26mmZ.png',
+                  align: 'start',
+                  size: 'xxs'
+                },
+                {
+                  type: 'box',
+                  layout: 'vertical',
+                  flex: 4,
+                  contents: [
+                    {
+                      type: 'text',
+                      text: '3月1日 (月) 07:00 - 08:00 ',
+                      gravity: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '募:3 / 閲:40 / 応:10 / 採:3 / 確:2',
+                      size: 'xs'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'separator',
+              margin: 'lg',
+              color: '#AAAAAA'
+            },
+            {
+              type: 'box',
+              layout: 'horizontal',
+              spacing: 'sm',
+              margin: 'lg',
+              action: {
+                type: 'message',
+                label: 'Job3',
+                text: 'Job3'
+              },
+              contents: [
+                {
+                  type: 'image',
+                  url: 'https://i.imgur.com/tT26mmZ.png',
+                  align: 'start',
+                  size: 'xxs'
+                },
+                {
+                  type: 'box',
+                  layout: 'vertical',
+                  flex: 4,
+                  contents: [
+                    {
+                      type: 'text',
+                      text: '3月1日 (月) 07:00 - 08:00 ',
+                      gravity: 'center'
+                    },
+                    {
+                      type: 'text',
+                      text: '募:3 / 閲:40 / 応:10 / 採:3 / 確:2',
+                      size: 'xs'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'separator',
+              margin: 'lg',
+              color: '#AAAAAA'
+            },
+            {
+              type: 'box',
+              layout: 'horizontal',
+              spacing: 'sm',
+              margin: 'lg',
+              action: {
+                type: 'message',
+                label: 'Job4',
+                text: 'Job4'
+              },
+              contents: [
+                {
+                  type: 'image',
+                  url: 'https://i.imgur.com/tT26mmZ.png',
+                  align: 'start',
+                  size: 'xxs'
+                },
+                {
+                  type: 'box',
+                  layout: 'vertical',
+                  flex: 4,
+                  contents: [
+                    {
+                      type: 'text',
+                      text: '3月1日 (月) 07:00 - 08:00 '
+                    },
+                    {
+                      type: 'text',
+                      text: '募:3 / 閲:40 / 応:10 / 採:3 / 確:2',
+                      size: 'xs',
+                      gravity: 'bottom'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'separator',
+              margin: 'lg',
+              color: '#AAAAAA'
+            }
+          ]
+        }
+      ]
+    },
+    footer: {
+      type: 'box',
+      layout: 'horizontal',
+      contents: [
+        {
+          type: 'button',
+          action: {
+            type: 'datetimepicker',
+            label: 'Select Date',
+            data: 'Date',
+            mode: 'datetime',
+            initial: '2020-03-02T13:06',
+            max: '2021-03-02T13:06',
+            min: '2019-03-02T13:06'
+          },
+          color: '#FD914D',
+          height: 'sm',
+          style: 'primary'
+        }
+      ]
+    }
+  }
+}
