@@ -49,9 +49,9 @@ function handleEvent(event){
   return client.replyMessage(event.replyToken, imageMap);
   } else if(event.message.text==='I love Eba'){
     return client.replyMessage(event.replyToken, carousel);
-  }else if(event.message.text==='jobList'){
+  } else if(event.message.text==='jobList'){
     return client.replyMessage(event.replyToken, jobList);
-  
+  }
 }
 
 // const j = schedule.scheduleJob("*/30 * * * * *", function() {
