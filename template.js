@@ -76,9 +76,9 @@ module.exports.imageMap= {
       type: 'message',
       text: 'Hello haha',
       area: {
-        x: 520,
+        x: 0,
         y: 520,
-        width: 520,
+        width: 1040,
         height: 520
       }
     }
