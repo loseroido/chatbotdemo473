@@ -59,7 +59,7 @@ module.exports.imageMap= {
         x: 0,
         y: 0,
         width: 520,
-        height: 1040
+        height: 520
       }
     },
     {
@@ -69,7 +69,7 @@ module.exports.imageMap= {
         x: 520,
         y: 0,
         width: 520,
-        height: 1040
+        height: 520
       }
     },
     {
@@ -78,7 +78,7 @@ module.exports.imageMap= {
       area: {
         x: 520,
         y: 520,
-        width: 1040,
+        width: 520,
         height: 520
       }
     }
